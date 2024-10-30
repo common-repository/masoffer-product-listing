@@ -1,0 +1,30 @@
+table textarea{
+    height: 250px;
+    width: 100%;
+}
+
+.mo-loader {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    border: 7px solid #f3f3f3;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: roy-spin 2s linear infinite; /* Safari */
+    animation: roy-spin 1s linear infinite;
+    border-top: 7px solid #3498db;
+}
+
+/* Safari */
+@-webkit-keyframes roy-spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes roy-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
